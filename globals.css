@@ -1,0 +1,46 @@
+input[type="image"] {
+    position: absolute;
+    width: 2.5rem;
+    filter:brightness(1);
+    transition: .5s;
+    margin-left: 0.25rem;
+}
+input[type="image"]:hover {
+    filter:brightness(1.5);
+    transform: scale(1.2);
+}
+
+.todo_input{
+  transition: ease-in-out .25s;
+  
+}
+
+.todo_input:focus{
+  width: 400px;
+}
+
+.bubble{
+    transition: all 200ms cubic-bezier(.47,0,.41,.8);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #b993ff;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a574ff;
+  }
+  ::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+  }

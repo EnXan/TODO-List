@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ca61e08eab.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'white-bg': "url('img/rm222-mind-20.jpg')",
+
+                    },
+                    colors: {
+                        dark: "#080808",
+                        dark_purple: "#4C4B63", 
+                        beige: "#FFF4E4",
+                        
+                        
+                    }
+                }
+            }
+        }
+    </script>
+    <title>To-Do-List</title>
+</head>
+<body class="bg-white-bg bg-no-repeat w-screen h-screen flex flex-col min-h-screen overflow-x-hidden" >
+    <header class="flex bg-black/10  backdrop-blur-xl border border-white/25 shadow-md p-5 pt-0">
+        <div class="mx-auto">
+        <h1 class="text-[64px] font-bold drop-shadow-md text-center mb-4">
+            <span class="text-white">ToDo </span>
+        </h1>
+        <form id="new-todo-form">
+            <input class="todo_input bg-dark_purple/50 placeholder:text-purple-400 shadow-md p-2 rounded-xl min-w-[250px] max-w-[400px] w-[20vw] focus:outline-none text-white" type="text" id="new-todo-input" placeholder="add tasks...">
+            <input class="cursor-pointer drop-shadow" type="image" src="img/add_line.svg" name="" id="new-todo-submit">
+        </form>
+    </div>
+    </header>
+    <div class="h-[20px] w-screen" id="margin_header_bottom"></div>
+    <main class="mx-auto">
+        <section>
+            <ul id="todos-container" class="relative">
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
